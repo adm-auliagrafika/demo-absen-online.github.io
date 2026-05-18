@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Apps Script Web App</title>
+    <style>
+        /* Mengatur halaman agar memenuhi layar dan menghilangkan scrollbar bawaan */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        
+        /* Mengatur iframe agar fullscreen dan responsif */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Memuat link Google Apps Script Anda -->
+    <iframe 
+        src="https://script.google.com/macros/s/AKfycbypXh3-LhMmSTKXGOyCnJywjGRjclbaLdZ4gupr7qhM1hU5EFR618tcTSaf8hVwbA7R/exec" 
+        allowfullscreen="true"
+        allow="clipboard-read; clipboard-write; geolocation">
+    </iframe>
+
+</body>
+</html>
